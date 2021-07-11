@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A23D1C0B26958D3300ECE8BD /* tictactoehame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoehame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23D1C0B26958D3300ECE8BD /* tictactoegame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoegame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23D1C0E26958D3300ECE8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23D1C1026958D3300ECE8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A23D1C1226958D3300ECE8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		A23D1C0226958D3300ECE8BD = {
 			isa = PBXGroup;
 			children = (
-				A23D1C0D26958D3300ECE8BD /* tictactoehame */,
+				A23D1C0D26958D3300ECE8BD /* tictactoegame */,
 				A23D1C0C26958D3300ECE8BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +48,55 @@
 		A23D1C0C26958D3300ECE8BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A23D1C0B26958D3300ECE8BD /* tictactoehame.app */,
+				A23D1C0B26958D3300ECE8BD /* tictactoegame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A23D1C0D26958D3300ECE8BD /* tictactoehame */ = {
+		A23D1C0D26958D3300ECE8BD /* tictactoegame */ = {
 			isa = PBXGroup;
 			children = (
-				A23D1C0E26958D3300ECE8BD /* AppDelegate.swift */,
+				A23D1C282695EF8F00ECE8BD /* Model */,
 				A23D1C1026958D3300ECE8BD /* SceneDelegate.swift */,
-				A23D1C1226958D3300ECE8BD /* ViewController.swift */,
-				A23D1C1426958D3300ECE8BD /* Main.storyboard */,
+				A23D1C262695EF8800ECE8BD /* Controller */,
+				A23D1C252695EF8000ECE8BD /* View */,
 				A23D1C1726958D3300ECE8BD /* Assets.xcassets */,
 				A23D1C1926958D3300ECE8BD /* LaunchScreen.storyboard */,
 				A23D1C1C26958D3300ECE8BD /* Info.plist */,
 			);
-			path = tictactoehame;
+			path = tictactoegame;
+			sourceTree = "<group>";
+		};
+		A23D1C252695EF8000ECE8BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A23D1C1426958D3300ECE8BD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A23D1C262695EF8800ECE8BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A23D1C1226958D3300ECE8BD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A23D1C282695EF8F00ECE8BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A23D1C0E26958D3300ECE8BD /* AppDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A23D1C0A26958D3300ECE8BD /* tictactoehame */ = {
+		A23D1C0A26958D3300ECE8BD /* tictactoegame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A23D1C1F26958D3300ECE8BD /* Build configuration list for PBXNativeTarget "tictactoehame" */;
+			buildConfigurationList = A23D1C1F26958D3300ECE8BD /* Build configuration list for PBXNativeTarget "tictactoegame" */;
 			buildPhases = (
 				A23D1C0726958D3300ECE8BD /* Sources */,
 				A23D1C0826958D3300ECE8BD /* Frameworks */,
@@ -82,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = tictactoehame;
+			name = tictactoegame;
 			productName = tictactoehame;
-			productReference = A23D1C0B26958D3300ECE8BD /* tictactoehame.app */;
+			productReference = A23D1C0B26958D3300ECE8BD /* tictactoegame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A23D1C0626958D3300ECE8BD /* Build configuration list for PBXProject "tictactoehame" */;
+			buildConfigurationList = A23D1C0626958D3300ECE8BD /* Build configuration list for PBXProject "tictactoegame" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A23D1C0A26958D3300ECE8BD /* tictactoehame */,
+				A23D1C0A26958D3300ECE8BD /* tictactoegame */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = tictactoehame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.tictactoehame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = tictactoehame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,14 +339,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.tictactoehame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A23D1C0626958D3300ECE8BD /* Build configuration list for PBXProject "tictactoehame" */ = {
+		A23D1C0626958D3300ECE8BD /* Build configuration list for PBXProject "tictactoegame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A23D1C1D26958D3300ECE8BD /* Debug */,
@@ -329,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A23D1C1F26958D3300ECE8BD /* Build configuration list for PBXNativeTarget "tictactoehame" */ = {
+		A23D1C1F26958D3300ECE8BD /* Build configuration list for PBXNativeTarget "tictactoegame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A23D1C2026958D3300ECE8BD /* Debug */,
